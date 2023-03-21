@@ -15,7 +15,7 @@
         if ($outCheck->num_rows > 0) {
             $counter = 0;
             while ($row = $outCheck->fetch_assoc()) {
-                echo $row[$table] . "\n";
+                echo $row[$return] . "\n";
             }
         }
         if ($debug == true) {
@@ -24,6 +24,7 @@
             echo $username . "<br>";
             echo $password . "<br>";
             echo $db . "<br>";
+            echo $return . "<br>";
             print_r($conn);
         }
         $conn->close();
