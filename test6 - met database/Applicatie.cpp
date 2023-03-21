@@ -21,16 +21,11 @@ std::string sql(std::string query, std::string sqlreturn = "leeg") {//SQL Functi
     std::ifstream bestand("data.url");
     while (getline(bestand, outvar)) {
         ++sqlCounter;
-    }
-    std::string outvarArr[sqlCounter];
-    sqlCounter = 0;
-    while (getline(bestand, outvar)) {
-        ++sqlCounter;
-        outvarArr[sqlCounter] = outvar;
+        std::cout << sqlCounter << "data: " << outvar << "\n";
     }
     bestand.close();
     //system("del data.url");
-    return outvarArr[0];
+    return "";
 }
 
 int main() {
