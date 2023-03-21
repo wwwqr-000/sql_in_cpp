@@ -5,10 +5,10 @@
 std::string sql(std::string query, std::string sqlreturn = "leeg") {//SQL Functie.
     //Config
     std::string url = "localhost";
-    std::string db = "fp245787";
-    std::string username = "fp245787";
-    std::string password = "html^sql_gggBroak oAk_cpp_jnEFIUB4uirg74jnENJefbjEB";
-    std::string conn_file_url = "http://mbo-portal.nl/~fp245787/sql_cpp_to_php.php";
+    std::string db = "db_test";
+    std::string username = "root";
+    std::string password = "";
+    std::string conn_file_url = "";
     //
     query = std::regex_replace(query, std::regex("\\ "), "%20");
     query = std::regex_replace(query, std::regex("\\^"), "%5E");
