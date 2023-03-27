@@ -49,8 +49,6 @@ std::string sql(std::string query, std::string sqlreturn = "leeg__", int x = 0) 
     system("del data.url");
     return "";
 }
-
-int main() {
     /*  Voorbeeld:
 
         std::cout << sql("SELECT * FROM test", "innertest", 0);
@@ -65,5 +63,3 @@ int main() {
 
         3: als je stap 2 gebruikt, zet hier dan je row nummer neer. (int).
     */
-    return 0;
-}
